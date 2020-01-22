@@ -48,6 +48,9 @@ class Post extends Component {
                 </div>
             )
         })
+        if(links == 0) {
+            return <div className="no-content">No Post Links</div>
+        }
         return links;
     }
 
@@ -74,7 +77,8 @@ class Post extends Component {
                     </div>
                     <div className="result-post__title">
                         <a href={this.props.url_for_post}>
-                        {this.props.title}</a>
+                        {this.props.title}
+                        </a>
                     </div>
                     <AnimateHeight
                         duration={500}

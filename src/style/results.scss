@@ -15,7 +15,7 @@
   .results-posts__wrapper {
     .results-posts__posts {
       display: grid;
-      grid-row-gap: 20px;
+      grid-row-gap: 21px;
       justify-content: stretch;
     }
   }
@@ -40,13 +40,15 @@
   }
 
   .results-post__links {
-   // display: flex;
+   display: flex; 
   }
 }
 
 .post_link {
   min-height: 70px;
   display: flex;
+  flex-basis: 205px;
+  margin-right: 37px;
 
   .post-link__box {
     min-width: 70px;
